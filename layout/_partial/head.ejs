@@ -14,31 +14,35 @@
 -->
 <html>
 <head>
-	<meta charset="utf-8">
-	<%
-	var title = page.title;
-	
-	if (is_archive()){
-		title = "Archives";
+    <meta charset="utf-8">
+    <%
+    var title = page.title;
 
-		if (is_month()){
-			title += ': ' + page.year + '/ ' + page.month;
-		}else if (is_year()){
-			title += ': ' + page.year;
-		}
-	}else if (is_category()){
-		title = 'Category: ' + page.category;
-	}else if (is_tag()){
-		title = 'Tag:' + page.tag;
-	}
-	%>
+    if (is_archive()) {
+        title = "Archives";
 
-	<title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-	<!-- meta data -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="keywords" content="Yanmin,Blog">
-	<meta name="description" content="personal blog website.">
-	<meta name="author" content="Yanmin">
-	<%- css('css/style') %>
-	<%- partial('_partial/google-analytics') %>
+        if (is_month()) {
+            title += ': ' + page.year + '/ ' + page.month;
+        } else if (is_year()) {
+            title += ': ' + page.year;
+        }
+    } else if (is_category()) {
+        title = 'Category: ' + page.category;
+    } else if (is_tag()) {
+        title = 'Tag:' + page.tag;
+    }
+    %>
+
+    <title>
+        <% if (title){ %>
+        <%= title %> |
+        <% } %>
+        <%= config.title %></title>
+    <!-- meta data -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Yanmin,Blog">
+    <meta name="description" content="personal blog website.">
+    <meta name="author" content="Yanmin">
+    <%- css('css/style') %>
+    <%- partial('_partial/google-analytics') %>
 </head>
