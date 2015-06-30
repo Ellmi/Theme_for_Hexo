@@ -1,5 +1,8 @@
 <% if (config.disqus_shortname){ %>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/morphext.min.js"></script>
 <script>
+    //disqus
     var disqus_shortname = '<%= config.disqus_shortname %>';
     <% if (page.permalink){ %>
     var disqus_url = '<%= page.permalink %>';
@@ -11,5 +14,19 @@
         dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
+
+    //Morphext
+    $(document).ready(function() {
+    $(".morphext").Morphext({
+        // The [in] animation type. Refer to Animate.css for a list of available animations.
+        animation: "bounceIn",
+        // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+        separator: ";",
+        // The delay between the changing of each phrase in milliseconds.
+        speed: 3800
+    });
+    });
+
 </script>
+
 <% } %>
