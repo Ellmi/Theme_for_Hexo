@@ -1,6 +1,5 @@
 <% if (config.disqus_shortname){ %>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/morphext.min.js"></script>
 <script>
     //disqus
     var disqus_shortname = '<%= config.disqus_shortname %>';
@@ -14,7 +13,9 @@
         dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
-
+</script>
+<script type="text/javascript" src="js/morphext.min.js"></script>
+<script>
     //Morphext
     $(document).ready(function() {
     $(".morphext").Morphext({
