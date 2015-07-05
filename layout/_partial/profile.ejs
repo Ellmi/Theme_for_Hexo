@@ -12,10 +12,10 @@
     </p>
 
     <div class="guider">
-        <span>Home</span>
-        <span>Blog</span>
-        <span>Communication</span>
-        <span>About me</span>
+        <% for (var i in theme.menu){ %>
+        <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><span><%= i %></span></a>
+        <% } %>
+
     </div>
 
     <div class="link">

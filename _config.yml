@@ -1,2 +1,9 @@
+# Header
+menu:
+  Home: /
+  Blog: /blog
+  Communication: /communication
+  About_me: /about_Me
+
 # Miscellaneous
 google_analytics:
