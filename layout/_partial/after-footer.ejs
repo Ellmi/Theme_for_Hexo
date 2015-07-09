@@ -1,5 +1,4 @@
 <% if (config.disqus_shortname){ %>
-<script type="text/javascript" src="js/jquery.js"></script>
 <script>
     //disqus
     var disqus_shortname = '<%= config.disqus_shortname %>';
@@ -14,6 +13,8 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
+<% } %>
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/morphext.min.js"></script>
 <script>
     //Morphext
@@ -30,4 +31,3 @@
 
 </script>
 
-<% } %>
