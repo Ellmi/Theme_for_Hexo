@@ -1,13 +1,13 @@
-<%- partial('_partial/head') %>
+<%- partial('_partial/head'), {}, {cache: true} %>
 <body>
 <div id="ContentContainer">
     <div id="profile">
-        <%- partial('_partial/profile') %>
+        <%- partial('_partial/profile'), {}, {cache: true} %>
     </div>
     <div id="content">
         <%- body %>
     </div>
-    <%- partial('_partial/after-footer') %>
+    <%- partial('_partial/after-footer'), {}, {cache: true} %>
 </div>
 </body>
 </html>
