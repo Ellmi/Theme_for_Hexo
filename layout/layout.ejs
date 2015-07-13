@@ -1,9 +1,7 @@
 <%- partial('_partial/head') %>
 <body>
 <div id="ContentContainer">
-    <div id="profile">
-        <%- partial('_partial/profile', null, {cache: true}) %>
-    </div>
+    <%- partial('_partial/sidebar', null, {cache: true}) %>
     <div id="content">
         <%- body %>
     </div>
