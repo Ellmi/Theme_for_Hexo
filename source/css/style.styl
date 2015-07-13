@@ -1,3 +1,35 @@
 @import "_variables"
 @import "icon.styl"
 @import "_partial/profile"
+
+body
+  background: color-background
+  font: font-size font-sans
+  margin: 0
+
+@media screen and (min-height: 763px)
+  #content
+    bottom: 0
+
+@media screen and (max-height: 763px)
+  #content
+    height: 763px
+
+#content
+  margin: 0 0 0 360px
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+
+.homepage
+  background: #75A7D7;
+  height: 100%
+
+@media screen and (max-width: 1000px)
+  #content
+    margin: 0 0 0 200px
+
+@media screen and (max-width: 600px)
+  #content
+    margin :100px 0 0 0
