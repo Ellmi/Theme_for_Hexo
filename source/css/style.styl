@@ -1,19 +1,19 @@
 @import "_variables"
 @import "icon.styl"
-@import "_partial/profile"
+@import "_partial/sidebar"
 
 body
   background: color-background
   font: font-size font-sans
   margin: 0
 
-@media screen and (min-height: 763px)
+@media screen and (min-height: 773px)
   #content
     bottom: 0
 
-@media screen and (max-height: 763px)
+@media screen and (max-height: 773px)
   #content
-    height: 763px
+    height: 773px
 
 #content
   margin: 0 0 0 360px
@@ -24,6 +24,7 @@ body
 
 .homepage
   background: #75A7D7;
+  box-shadow: 0px 0px 50px #eee inset;
   height: 100%
 
 @media screen and (max-width: 1000px)
@@ -33,3 +34,8 @@ body
 @media screen and (max-width: 600px)
   #content
     margin :100px 0 0 0
+
+.logo
+  background :url(/css/images/logo.png) no-repeat;
+  height: 200px;
+  background-size: 100px;
