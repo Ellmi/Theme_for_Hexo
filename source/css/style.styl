@@ -26,10 +26,43 @@ body
   background: #75A7D7;
   box-shadow: 0px 0px 50px #eee inset;
   height: 100%
+  color: white;
+  font-family: cursive;
+
+.home-title h1
+  margin: 0
+  padding: 62px 0 42px 119px;
+  font-size: 5rem;
+  font-weight: normal
+  color:whitesmoke
+
+.home-title h1:hover
+  font-weight: bolder
+
+
+.home-title span
+  padding: 3px;
+  font-size: 3.2rem;
+  transition: all 0.5s ease;
+  border-bottom: 2px dashed
+
+.home-title span:hover
+  transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+
+.home-title div
+  text-align: center;
 
 @media screen and (max-width: 1000px)
   #content
     margin: 0 0 0 200px
+  .home-title span
+    font-size :2.1rem
+  .home-title h1
+    padding: 116px 0 42px 100px;
+    font-size: 4rem;
 
 @media screen and (max-width: 600px)
   #content
@@ -39,3 +72,13 @@ body
   background :url(/css/images/logo.png) no-repeat;
   height: 200px;
   background-size: 100px;
+  position: relative;
+  left: 180px;
+  top: -121px;
+  transform: rotate(302deg);
+
+.copyright
+  position: absolute;
+  top: 735px;
+  text-align: center;
+  width: 100%;
