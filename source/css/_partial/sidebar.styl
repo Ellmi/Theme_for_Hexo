@@ -1,14 +1,10 @@
 .sidebar
   position: absolute
   background-color: whitesmoke
-  top: 0
-  left: 0
   width: 360px
   box-shadow: #ccc 0 0 10px
   border-right: 1px solid #ddd
   z-index: 1
-  height: 100%
-  overflow:scroll
 
 .master-portrait
   display: block
@@ -29,6 +25,10 @@
   margin: 28px auto;
   background-image: url(master-name-url);
   background-size: 128px 60px;
+
+@media screen and (max-width: 600px) and (min-height:773px), screen and (min-width: 1000px) and (min-height:773px), screen and (max-width: 1000px) and (min-width:600px) and (min-height:665px)
+  .sidebar
+    height:100%
 
 @media screen and (max-width: 1000px) and (min-width:600px)
   .sidebar
