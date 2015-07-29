@@ -7,16 +7,13 @@ body
   font: font-size font-sans
   margin: 0
 
-/*#ContentContainer*/
-  /*position: absolute;*/
-  /*width: 100%;*/
-  /*height: 100%;*/
-  /*overflow: scroll;*/
-
 #content
   margin: 0 0 0 360px
   position: absolute
   height: 100%
+  background-color: #75a7d7;
+  right:0
+  left: 0
   overflow: scroll
 
 .homepage
@@ -64,6 +61,12 @@ body
     padding: 116px 0 42px 100px;
     font-size: 4rem;
 
+@media screen and (max-width: 1000px) and (min-width:600px) and (max-height:665px)
+  #content
+    height: 665px
+@media screen and (min-width: 1000px) and (max-height:773px)
+  #content
+    height: 773px
 @media screen and (max-width: 600px)
   #content
     margin :100px 0 0 0
