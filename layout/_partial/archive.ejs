@@ -1,11 +1,28 @@
-<% page.posts.each(function(post) { %>
-<%- partial('article', {post: post}) %>
-<% }) %>
-<% if(page.total > 1){ %>
-<nav id="page-nav">
-    <%- paginator({
-        prev_text: '&laquo;Prev',
-        next_text: 'Next &raquo;'
-    }) %>
+<h1 class="title">My Blogs</h1>
+<nav>
+    <li class="left">
+        ARCHIVE
+    </li>
+    <li>
+        CATEGORIES
+    </li>
+    <li>
+        TAGS
+    </li>
+    <li class="right">
+        WIKI
+    </li>
 </nav>
-<% } %>
+<div class="blogContents">
+    <% page.posts.each(function(post) { %>
+    <%- partial('article', {post: post}) %>
+    <% }) %>
+    <% if(page.total > 1){ %>
+    <nav id="page-nav">
+        <%- paginator({
+            prev_text: '&laquo;Prev',
+            next_text: 'Next &raquo;'
+        }) %>
+    </nav>
+    <% } %>
+</div>
