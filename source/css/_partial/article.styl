@@ -1,0 +1,87 @@
+block-margin = 50px
+article-padding = 20px
+mobile-nav-width = 280px
+main-column = 9
+sidebar-column = 3
+color-default = #555
+line-height-title = 1.1em
+color-border = #ddd
+
+.article
+  margin: block-margin 0
+
+.article-inner
+  display: block
+  overflow: hidden
+
+.article-header
+  padding: article-padding article-padding 0
+
+.article-title
+  text-decoration: none
+  font-size: 2em
+  font-weight: bold
+  color: color-default
+  line-height: line-height-title
+  transition: color 0.2s
+
+
+.article-entry
+  color: color-default
+  padding: 0 article-padding
+  p, table
+    line-height: line-height
+    margin: line-height 0
+  h1, h2, h3, h4, h5, h6
+    font-weight: bold
+  h1, h2, h3, h4, h5, h6
+    line-height: line-height-title
+    margin: line-height-title 0
+  a
+    color: color-link
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  ul, ol, dl
+    margin-top: line-height
+    margin-bottom: line-height
+  img, video
+    max-width: 100%
+    height: auto
+    display: block
+    margin: auto
+  iframe
+    border: none
+  table
+    width: 100%
+    border-collapse: collapse
+    border-spacing: 0
+  th
+    font-weight: bold
+    border-bottom: 3px solid color-border
+    padding-bottom: 0.5em
+  td
+    border-bottom: 1px solid color-border
+    padding: 10px 0
+  blockquote
+    font-size: 1.4em
+    margin: line-height 20px
+    text-align: center
+    footer
+      font-size: font-size
+      margin: line-height 0
+
+  .pullquote
+    text-align: left
+    width: 45%
+    margin: 0
+
+  .caption
+    color: color-grey
+    display: block
+    font-size: 0.9em
+    margin-top: 0.5em
+    position: relative
+    text-align: center
+
+
