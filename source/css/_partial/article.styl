@@ -7,24 +7,28 @@ color-default = #555
 line-height-title = 1.1em
 color-border = #ddd
 
-.article
-  margin: block-margin 0
-
 .article-inner
   display: block
   overflow: hidden
+  border-bottom: 2px dashed #0099d5;
 
 .article-header
   padding: article-padding article-padding 0
 
+.article-title:hover
+  color: #fff;
+  background: #0099d5;
+  box-shadow: 0 0 50px #eee inset;
+  transition: all 1s;
+  border-radius: 10px;
+  padding: 3px;
+
 .article-title
   text-decoration: none
-  font-size: 2em
+  font-size: 1.4em;
   font-weight: bold
-  color: color-default
-  line-height: line-height-title
-  transition: color 0.2s
-
+  color: #0099d5
+  border-bottom: 1px dashed #ccc;
 
 .article-entry
   color: color-default
