@@ -1,2 +1,6 @@
-<%- partial('_partial/article', {post: page, blog: false}) %>
+<h1 class="title">My Blogs</h1>
+<%- partial('_partial/nav-bar') %>
+<div class="blogContents">
+    <%- partial('_partial/article', {post: page, blog: false}) %>
+</div>
 <%- partial('_partial/copyright') %>

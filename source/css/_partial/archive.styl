@@ -1,5 +1,5 @@
 .blogContents
-  margin: 190px 30px 30px;
+  margin: 190px 82px 30px;
   background: #FFFBF5;
   border-left: 4px dashed #0099D5;
   border-right: 4px dashed #0099D5;
@@ -11,20 +11,20 @@
   color: #0099D5;
   font-size: 2.3rem;
   font-weight: bold;
-  margin: 30px;
+  margin: 30px 82px;
   position: absolute;
 
-#content nav 
+#content nav
   background-color: #FFFBF5;
   position: absolute;
-  left: 30px;
-  right: 30px;
+  left: 82px;
+  right: 82px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   top: 109px;
   z-index: 2;
 
-#content nav li 
+#content nav li
   display: inline-block;
   width: 25%;
   font-size: 0.9rem;
@@ -43,3 +43,11 @@
 
 #content nav li.right:hover
   border-top-right-radius: 8px;
+@media screen and (max-width: 1000px) and (min-width:600px)
+  .blogContents
+    margin: 190px 30px 30px;
+  #content nav
+    left: 30px;
+    right: 30px;
+  #content .title
+    margin: 30px

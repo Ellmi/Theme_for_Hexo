@@ -1,18 +1,5 @@
 <h1 class="title">My Blogs</h1>
-<nav>
-    <li class="left">
-        ARCHIVE
-    </li>
-    <li>
-        CATEGORIES
-    </li>
-    <li>
-        TAGS
-    </li>
-    <li class="right">
-        WIKI
-    </li>
-</nav>
+<%- partial('_partial/nav-bar') %>
 <div class="blogContents">
     <% page.posts.each(function(post) { %>
     <%- partial('article', {post: post, blog:true}) %>
