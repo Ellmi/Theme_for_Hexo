@@ -6,4 +6,4 @@ menu:
   About_me: /about_me
 
 # Miscellaneous
-google_analytics:
+google_analytics: true
