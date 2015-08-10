@@ -1,6 +1,14 @@
 <%- partial('_partial/head') %>
 <body>
-<div id="ContentContainer">
+<%
+var pageType;
+if (is_home()) {
+    pageType = "home";
+} else {
+    pageType = "others";
+}
+%>
+<div id="ContentContainer" class="<%= pageType%>">
     <%- partial('_partial/sidebar', null, {cache: true}) %>
     <div id="content">
         <%- body %>
