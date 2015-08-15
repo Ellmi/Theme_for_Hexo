@@ -97,10 +97,21 @@ a.article-comments-count:after
   blockquote
     font-size: 1.4em
     margin: line-height 20px
-    text-align: center
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    background-color: rgba(0,0,0,0.1);
+    border-left: 8px #ccc solid;
     footer
       font-size: font-size
       margin: line-height 0
+  blockquote p
+    display: inline;
+  blockquote:before
+    color: #ccc;
+    content: open-quote;
+    font-size: 2em;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.4em;
 
   .pullquote
     text-align: left
