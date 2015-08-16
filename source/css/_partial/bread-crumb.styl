@@ -1,0 +1,25 @@
+.bread-crumb
+  margin: 20px 0;
+  border-left: 9px double #ccc;
+  padding: 7px 9px;
+  border-right: 9px double #ccc;
+  display: inline-block;
+  background-color: #f5f5f5;
+
+.bread-crumb a
+  text-decoration: none
+  color: #0099d5;
+  font-weight: 100
+  margin: 0 5px;
+
+.bread-crumb:before
+  content: "";
+  position: absolute;
+  border-top: 3px solid #ccc;
+  width: 33px;
+  left: 82px;
+  top: 235px;
+
+@media screen and (max-width: 1000px)
+  .bread-crumb:before
+    left: 30px;

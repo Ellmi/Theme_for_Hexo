@@ -1,5 +1,15 @@
-<a href="/archives">Blog</a>
-<% if(is_archive()){ %>/<a href="/archives">archive</a> <% } %>
-<% if(is_category()){ %>/<a href="/category">category</a> <% } %>
-<% if(is_tag()){ %>/<a href="/tag">tag</a> <% } %>
-<% if(page.title){ %>/<a href="<%- url_for(page.path) %>"><%= page.title %></a> <% } %>
+<div class="bread-crumb">
+    <a href="/archives">Blog</a>
+    <% if(is_archive()){ %>
+    /<a href="/archives">archive</a>
+    <% } %>
+    <% if(is_category()){ %>
+    /<a href="/category">category</a>
+    <% } %>
+    <% if(is_tag()){ %>
+    /<a href="/tag">tag</a>
+    <% } %>
+    <% if(page.title){ %>
+    /<a href="<%- url_for(page.path) %>"><%= page.title %></a>
+    <% } %>
+</div>
