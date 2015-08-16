@@ -1,8 +1,9 @@
 <h1 class="title">My Blogs</h1>
 <%- partial('_partial/nav-bar') %>
 <div class="blogContents">
+    <%- partial('_partial/bread-crumb') %>
     <% page.posts.each(function(post) { %>
-    <%- partial('article', {post: post, blog:true}) %>
+    <%- partial('article', {post: post, blog: true}) %>
     <% }) %>
     <% if(page.total > 1){ %>
     <nav id="page-nav">
