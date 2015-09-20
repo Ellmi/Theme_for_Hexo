@@ -13,7 +13,7 @@
 
     <div class="guider">
         <% for (var i in theme.menu){ %>
-        <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><span><%= i %></span></a>
+        <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><span><%= __('menu.' + i.toLowerCase()) %></span></a>
         <% } %>
 
     </div>
