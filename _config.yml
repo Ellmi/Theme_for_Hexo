@@ -8,11 +8,3 @@ menu:
 # Miscellaneous
 google_analytics: true
 
-# language
-i18n_dir: :lang
-language: en
-
-language:
-- zh-cn
-- en
-
