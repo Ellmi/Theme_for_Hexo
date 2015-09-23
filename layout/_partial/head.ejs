@@ -12,7 +12,7 @@
 	      y          m              m
 	      y          m              m    theme by Yanmin
 -->
-<html>
+<html lang="<%= page.lang %>">
 <head>
     <meta charset="utf-8">
     <%
@@ -44,6 +44,8 @@
     <meta name="description" content="personal blog website.">
     <meta name="author" content="Yanmin">
     <link rel="icon" type="image/png" href="/css/images/favicon.ico">
+    <!-- Canonical links -->
+    <link rel="canonical" href="<%= url %>">
     <%- css('css/style') %>
     <%- partial('_partial/google-analytics') %>
 </head>
