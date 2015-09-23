@@ -8,3 +8,5 @@ menu:
 # Miscellaneous
 google_analytics: true
 
+# internationalization
+internationalization: false
