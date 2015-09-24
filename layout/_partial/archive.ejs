@@ -2,7 +2,7 @@
 <%- partial('_partial/nav-bar') %>
 <div class="blogContents">
     <%- partial('_partial/bread-crumb') %>
-    <% page.posts.each(function(post) { %>
+    <% site.posts.each(function(post) { %>
     <%- partial('article', {post: post, blog: true}) %>
     <% }) %>
     <% if(page.total > 1){ %>
