@@ -1,4 +1,5 @@
-<!--<%- partial('_partial/developing') %>-->
 <% if(page.type === "blog"){ %>
-    <%- partial('blog')%>
+<%- partial('blog') %>
+<% } else {  %>
+<%- partial('_partial/developing') %>
 <% } %>
