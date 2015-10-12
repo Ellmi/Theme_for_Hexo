@@ -1,25 +1,27 @@
 .bread-crumb
-  margin: 20px 0;
+  margin: 46px 0 20px 82px;
   border-left: 9px double #ccc;
   padding: 7px 9px;
   border-right: 9px double #ccc;
   display: inline-block;
   background-color: #f5f5f5;
+  box-shadow: #ccc 0 0 10px;
 
 .bread-crumb a
   text-decoration: none
   color: #0099d5;
-  font-weight: 100
   margin: 0 5px;
 
 .bread-crumb:before
   content: "";
   position: absolute;
   border-top: 3px solid #ccc;
-  width: 33px;
-  left: 82px;
-  top: 235px;
+  width: 82px;
+  left: 0;
+  top: 60px;
 
 @media screen and (max-width: 1000px)
   .bread-crumb:before
-    left: 30px;
+    width: 30px;
+  .bread-crumb
+    margin: 46px 0 20px 30px;

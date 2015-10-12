@@ -1,6 +1,5 @@
 <%- partial('_partial/nav-bar') %>
 <div class="blogContents">
-    <%- partial('_partial/bread-crumb') %>
     <% site.posts.each(function(post) { %>
     <%- partial('article', {post: post, blog: true}) %>
     <% }) %>
