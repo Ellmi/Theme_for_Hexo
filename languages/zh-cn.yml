@@ -13,3 +13,9 @@ language: 简体中文
 copyright:
   before: 版权 © 2015 - Yanmin | 由
   after: 强力驱动.
+
+nav:
+  archives: 归档
+  categories: 分类
+  tags: 标签
+  wiki: 百科

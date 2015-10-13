@@ -14,3 +14,9 @@ language: English
 copyright:
   before: Copyright © 2015 - Yanmin | Powered by
   after: .
+
+nav:
+  archives: ARCHIVE
+  categories: CATEGORIES
+  tags: TAGS
+  wiki: WIKI
