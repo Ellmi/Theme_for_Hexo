@@ -3,6 +3,10 @@
   background: #FFFBF5;
   border-left: 4px dashed #0099D5;
   padding: 10px 29px;
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px)
+
+.blog-index-container
+  margin: 97px 82px 30px;
 
 #content nav#type-nav
   background-color: #FFFBF5;
@@ -12,6 +16,7 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   top: 118px;
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px);
 
 #content nav li
   display: inline-block;
@@ -34,8 +39,9 @@
 #content nav li.right:hover
   border-top-right-radius: 8px;
 @media screen and (max-width: 1000px)
-  .blogContents
+  .blogContents,
+  .blog-index-container
     margin: 97px 30px 30px;
-  #content nav
+  #content nav#type-nav
     left: 30px;
     right: 30px;
