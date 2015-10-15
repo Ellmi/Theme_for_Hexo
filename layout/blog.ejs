@@ -1,3 +1,8 @@
 <%- partial('_partial/bread-crumb') %>
-<%- partial('_partial/archive') %>
+<%- partial('_partial/nav-bar') %>
+<div class="blog-index-container">
+    <% site.posts.each(function(post) { %>
+    <%- partial('_partial/article-index', {post: post}) %>
+    <% }) %>
+</div>
 <%- partial('_partial/copyright') %>
