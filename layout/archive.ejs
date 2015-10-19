@@ -1,3 +1,5 @@
 <%- partial('_partial/bread-crumb') %>
-<%- partial('_partial/archive') %>
+<% if (site.posts.length){ %>
+<%- list_archives() %>
+<% } %>
 <%- partial('_partial/copyright') %>
