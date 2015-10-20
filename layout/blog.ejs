@@ -5,4 +5,12 @@
     <%- partial('_partial/article-index', {post: post}) %>
     <% }) %>
 </div>
+<% if(page.total > 1){ %>
+<nav id="page-nav">
+    <%- paginator({
+        prev_text: '&laquo;Prev',
+        next_text: 'Next &raquo;'
+    }) %>
+</nav>
+<% } %>
 <%- partial('_partial/copyright') %>
