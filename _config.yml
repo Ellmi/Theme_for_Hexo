@@ -9,4 +9,4 @@ menu:
 google_analytics: true
 
 # internationalization
-internationalization: false
+internationalization: true
