@@ -1,7 +1,7 @@
 <%- partial('_partial/nav-bar') %>
 <div class="blogContents">
     <% site.posts.each(function(post) { %>
-    <%- partial('article', {post: post, blog: true}) %>
+    <p><h5><%=date(post.date, 'YYYY')%></h5>   <%=date(post.date, 'MM')%>-<%=date(post.date, 'DD')%>    <%=post.title%></p>
     <% }) %>
 </div>
 <% if(page.total > 1){ %>
