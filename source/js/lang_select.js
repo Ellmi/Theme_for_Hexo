@@ -11,5 +11,7 @@
     location.href = '/' + lang + canonical;
   }
 
-  document.getElementById('lang-select').addEventListener('change', changeLang);
+  if(document.getElementById('lang-select')){
+      document.getElementById('lang-select').addEventListener('change', changeLang);
+  }
 })();

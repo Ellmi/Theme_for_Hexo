@@ -1,4 +1,3 @@
-<%- partial('_partial/nav-bar') %>
 <div class="blogContents">
     <% site.posts.each(function(post) { %>
     <p><h5><%=date(post.date, 'YYYY')%></h5>   <%=date(post.date, 'MM')%>-<%=date(post.date, 'DD')%>    <%=post.title%></p>
