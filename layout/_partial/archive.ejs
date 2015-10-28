@@ -3,11 +3,3 @@
     <p><h5><%=date(post.date, 'YYYY')%></h5>   <%=date(post.date, 'MM')%>-<%=date(post.date, 'DD')%>    <%=post.title%></p>
     <% }) %>
 </div>
-<% if(page.total > 1){ %>
-<nav id="page-nav">
-    <%- paginator({
-        prev_text: '&laquo;Prev',
-        next_text: 'Next &raquo;'
-    }) %>
-</nav>
-<% } %>
