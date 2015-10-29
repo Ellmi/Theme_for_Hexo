@@ -1,5 +1,11 @@
-<div class="blogContents">
+<div class="archives">
+    <% var year %>
     <% site.posts.each(function(post) { %>
-    <p><h5><%=date(post.date, 'YYYY')%></h5>   <%=date(post.date, 'MM')%>-<%=date(post.date, 'DD')%>    <%=post.title%></p>
+        <% post.year = date(post.date, 'YYYY')%>
+        <% if( post.year !== year){ %>
+            <% year = post.year; %>
+            <li class="year"><%= year %></li>
+        <% } %>
+        <li><%=date(post.date, 'MM')%>-<%=date(post.date, 'DD')%>    <%=post.title%></li>
     <% }) %>
 </div>
