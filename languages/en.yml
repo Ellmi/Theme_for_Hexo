@@ -20,3 +20,9 @@ nav:
   categories: CATEGORIES
   tags: TAGS
   wiki: WIKI
+
+bread-crumb:
+  blogs: Blogs
+  archives: archieve
+  categories: categories
+  tags: tags

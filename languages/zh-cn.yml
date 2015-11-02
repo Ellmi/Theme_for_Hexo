@@ -19,3 +19,10 @@ nav:
   categories: 分类
   tags: 标签
   wiki: 百科
+
+
+bread-crumb:
+  blogs: 博客
+  archives: 归档
+  categories: 分类
+  tags: 标签

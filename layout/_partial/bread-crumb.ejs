@@ -1,13 +1,13 @@
 <div class="bread-crumb">
-    <a href="/archives">Blog</a>
+    <a href="/blog"><%= __('bread-crumb.blogs')%></a>
     <% if(is_archive()){ %>
-    /<a href="/archives">archive</a>
+    /<a href="/archives"><%= __('bread-crumb.archives')%></a>
     <% } %>
     <% if(is_category()){ %>
-    /<a href="/category">category</a>
+    /<a href="/category"><%= __('bread-crumb.categories')%></a>
     <% } %>
     <% if(is_tag()){ %>
-    /<a href="/tag">tag</a>
+    /<a href="/tag"><%= __('bread-crumb.tags')%></a>
     <% } %>
     <% if(page.title){ %>
     /<a href="<%- url_for(page.path) %>"><%= page.title %></a>
