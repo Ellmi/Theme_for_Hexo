@@ -9,7 +9,7 @@
     <% if(is_tag()){ %>
     /<a href="/tag"><%= __('bread-crumb.tags')%></a>
     <% } %>
-    <% if(page.title){ %>
+    <% if(page.title && page.title!=='blog'){ %>
     /<a href="<%- url_for(page.path) %>"><%= page.title %></a>
     <% } %>
 </div>
