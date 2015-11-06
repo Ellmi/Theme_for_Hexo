@@ -1,15 +1,15 @@
 <div class="bread-crumb">
-    <a href="/blog"><%= __('bread-crumb.blogs')%></a>
+    <a href="<%- theme.sourceRoot%>/blog"><%= __('bread-crumb.blogs')%></a>
     <% if(is_archive()){ %>
-    /<a href="/archives"><%= __('bread-crumb.archives')%></a>
+    /<a href="<%- theme.sourceRoot%>/archives"><%= __('bread-crumb.archives')%></a>
     <% } %>
     <% if(is_category()){ %>
-    /<a href="/category"><%= __('bread-crumb.categories')%></a>
+    /<a href="<%- theme.sourceRoot%>/category"><%= __('bread-crumb.categories')%></a>
     <% } %>
     <% if(is_tag()){ %>
-    /<a href="/tag"><%= __('bread-crumb.tags')%></a>
+    /<a href="<%- theme.sourceRoot%>/tag"><%= __('bread-crumb.tags')%></a>
     <% } %>
     <% if(page.title && page.title!=='blog'){ %>
-    /<a href="<%- url_for(page.path) %>"><%= page.title %></a>
+    /<a href="<%- theme.sourceRoot%><%- url_for(page.path) %>"><%= page.title %></a>
     <% } %>
 </div>

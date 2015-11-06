@@ -10,3 +10,5 @@ google_analytics: true
 
 # internationalization
 internationalization: true
+
+sourceRoot: /en
