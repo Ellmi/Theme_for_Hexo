@@ -26,3 +26,10 @@ bread-crumb:
   archives: archieve
   categories: categories
   tags: tags
+
+homepage:
+  fir: blog
+  sec: share
+  thi: my
+  fou: day
+  fiv: learning!
