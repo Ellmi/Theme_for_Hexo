@@ -6,6 +6,6 @@
             <% year = post.year; %>
             <li class="year"><%= year %></li>
         <% } %>
-        <li><span><%=date(post.date, 'MM')%>-<%=date(post.date, 'DD')%></span><a href="<%- theme.sourceRoot%><%- url_for(post.path) %>" class="article-title"><%= post.title %></a></li>
+        <li><span><%=date(post.date, 'MM')%>-<%=date(post.date, 'DD')%></span><a href="<%- url_for(post.path) %>" class="article-title"><%= post.title %></a></li>
     <% }) %>
 </div>
