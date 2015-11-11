@@ -22,11 +22,34 @@ body
   overflow: scroll
 
 .homepage
-  background: #75A7D7;
+  background: rgba(117,167,215,0.9);
   height: 100%
   color: white;
   font-family: cursive;
   box-shadow: 0 0 50px #eee inset;
+
+.homepage:after
+  content: '';
+  background: url("/css/images/background.jpeg") repeat;
+  background-size: 100%,100%;
+  z-index: -2;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-animation:section1 45s linear infinite;
+  animation:section1 45s linear infinite;
+  -moz-animation:section1 45s linear infinite;
+
+@-webkit-keyframes section1
+  0%{background-position :0 1000px;}
+  100%  {background-position :1000px 0;}
+
+@keyframes section1
+  0%{background-position :0 1000px;}
+  100%  {background-position :1000px 0;}
 
 .home-title h1
   margin: 0
