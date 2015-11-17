@@ -1,5 +1,7 @@
 <% if(page.type === "blog"){ %>
 <%- partial('blog') %>
-<% } else {  %>
+<% } else if(page.type === "tags"){  %>
+<%- partial('_partial/tags') %>
+<% } else { %>
 <%- partial('_partial/developing') %>
 <% } %>
