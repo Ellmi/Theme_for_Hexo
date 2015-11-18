@@ -1,1 +1,8 @@
-this is tags page
+<%- partial('_partial/header') %>
+<%- partial('_partial/nav-bar') %>
+<% if (site.tags.length){ %>
+<div class="tagcloud">
+    <%- tagcloud() %>
+</div>
+<% } %>
+<%- partial('_partial/copyright') %>
