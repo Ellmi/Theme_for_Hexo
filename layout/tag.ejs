@@ -1,9 +1,16 @@
-<% if (site.tags.length){ %>
-<div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-        <%- list_tags() %>
-    </div>
+<%- partial('_partial/header') %>
+<%- partial('_partial/nav-bar') %>
+<div class="blog-index-container">
+    <% page.posts.each(function(post) { %>
+    <%- partial('_partial/article-index', {post: post}) %>
+    <% })%>
 </div>
+<% if(page.total > 1){ %>
+<nav id="page-nav">
+    <%- paginator({
+        prev_text: '&laquo;Prev',
+        next_text: 'Next &raquo;'
+    }) %>
+</nav>
 <% } %>
 <%- partial('_partial/copyright') %>
