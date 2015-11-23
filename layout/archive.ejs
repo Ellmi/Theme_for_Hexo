@@ -1,4 +1,4 @@
-<%- partial('_partial/header') %>
+<%- partial('_partial/header',{breadCrumb: [{name: 'archives', path:  url_for(page.path)}]}) %>
 <%- partial('_partial/nav-bar') %>
 <%- partial('_partial/archive') %>
 <%- partial('_partial/copyright') %>
