@@ -1,6 +1,6 @@
 <div class="bread-crumb">
     <a href="<%- theme.sourceRoot%>/blog"><%= __('bread-crumb.blogs')%></a>
     <% breadCrumb.forEach(function(node){%>
-    /<a href="<%- theme.sourceRoot + node.path%>"><%= node.name?__('bread-crumb.'+ node.name):node.title%></a>
+    --><a href="<%- theme.sourceRoot + node.path%>"><%= node.name?__('bread-crumb.'+ node.name):node.title%></a>
     <%})%>
 </div>
