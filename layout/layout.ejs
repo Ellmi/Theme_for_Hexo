@@ -8,12 +8,12 @@ if (is_home()) {
     pageType = "others";
 }
 %>
-<div id="ContentContainer" class="<%= pageType%>">
+<div id="PageContainer" class="<%= pageType%>">
     <%- partial('_partial/sidebar', null, {cache: true}) %>
     <div id="content">
         <%- body %>
     </div>
-    <%- partial('_partial/after-footer') %>
 </div>
+<%- partial('_partial/after-footer') %>
 </body>
 </html>
