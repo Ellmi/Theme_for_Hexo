@@ -11,7 +11,7 @@
 @import "_partial/post/tag"
 @import "_partial/tagcloud"
 
-html,body
+html, body
   background: color-body-background
   font: font-size font-sans
   margin: 0
@@ -19,3 +19,12 @@ html,body
 @media mwp-mobile
   .home #mainContent
     display: none
+
+@media mwp-tablet
+  .home #mainContent
+    position: absolute
+    min-height: 100%
+    height: 656px
+    width: 100%
+    box-sizing: border-box
+    padding: 0 0 0 200px
