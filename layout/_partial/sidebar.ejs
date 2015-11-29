@@ -5,17 +5,17 @@
     <p class="master-name"></p>
 
     <p class="hi">
-        <span class="dropcap"><%= __('hi.hi')%></span>
-        <span class="detail"><%= __('hi.introduction')%></span>
+        <span class="dropcap"><%= __('hi.hi') %></span>
+        <span class="detail"><%= __('hi.introduction') %></span>
         <span class="icon-play3"></span>
-        <span class="occupation morphext"><%= __('hi.thinking')%></span>
+        <span class="occupation morphext"><%= __('hi.thinking') %></span>
     </p>
 
     <div class="guider">
         <% for (var i in theme.menu){ %>
-        <a class="main-nav-link" href="<%- theme.sourceRoot%><%- url_for(theme.menu[i]) %>"><span><%= __('menu.' + i.toLowerCase()) %></span></a>
+        <a class="main-nav-link"
+           href="<%- theme.sourceRoot %> <%- url_for(theme.menu[i]) %>"><span><%= __('menu.' + i.toLowerCase()) %></span></a>
         <% } %>
-
     </div>
 
     <div class="link">
