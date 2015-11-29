@@ -17,15 +17,22 @@ html, body
   font: font-size font-sans
   margin: 0
 
+.home #mainContent
+  position: absolute
+  min-height: 100%
+  width: 100%
+  box-sizing: border-box
+
 @media mwp-mobile
   .home #mainContent
     display: none
 
 @media mwp-tablet
   .home #mainContent
-    position: absolute
-    min-height: 100%
-    height: 656px
-    width: 100%
-    box-sizing: border-box
+    height: tablet-sidebar-height
     padding: 0 0 0 200px
+
+@media mwp-pc
+  .home #mainContent
+    height: whole-sidebar-height
+    padding: 0 0 0 360px
