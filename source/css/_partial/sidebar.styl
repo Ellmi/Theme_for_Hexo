@@ -3,7 +3,7 @@
   width: 360px
   box-shadow: #ccc 0 0 10px
   text-align: center
-  z-index: 1;
+  z-index: 1
 
 #PageContainer.home .sidebar
   min-height: 100%
@@ -44,12 +44,14 @@
     display :none
 
 @media mwp-mobile
-  .others .hi,
-  .others .guider,
-  .others .link
   .others .sidebar
     height : 100px
     width: 100%
+    position: absolute
+  .others .hi,
+  .others .guider,
+  .others .link
+    display: none
   .others .master-portrait
     height: 50px;
     width: 50px;
