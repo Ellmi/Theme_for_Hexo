@@ -1,0 +1,27 @@
+.header
+  margin-Top: 52px
+  margin-bottom: 42px
+  margin-right: 49px
+
+@media mwp-mobile
+  #lang-select-label span
+    display: none
+
+select#lang-select
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  opacity: 0
+
+@media mwp-mobile
+  div#lang-select-wrap
+    position: absolute
+    right: 42px
+    top: 155px
+    font-size: 22px
+
+@media mwp-tablet
+  #lang-select-label>*
+    vertical-align: middle
