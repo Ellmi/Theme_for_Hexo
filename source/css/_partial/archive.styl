@@ -2,9 +2,14 @@
 .blogContents,
 .tagcloud
   margin: 0 0 30px
-  border-left: 4px dashed #e4c6d0;
-  padding: 10px 29px 42px;
-  background: rgba(228,198,208,0.1);
+  border-left: 4px dashed color-main-theme-color
+  background: rgba(228,198,208,0.1)
+
+@media mwp-mobile
+  .archives,
+  .blogContents,
+  .tagcloud
+    padding: 11px 22px
 
 #mainContent nav#type-nav
   background-color: #fffbf5;
@@ -21,13 +26,13 @@
   font-family: arial;
   text-align: center;
   float: left;
-  color: #e4c6d0;
+  color: color-main-theme-color
   line-height: 52px;
-  box-shadow: #e4c6d0 0 4px 1px;
+  box-shadow: color-main-theme-color 0 4px 1px
 
 #content nav li:hover
   color: white;
-  background: #e4c6d0;
+  background: color-main-theme-color
 
 #content nav li.left:hover
   border-top-left-radius: 8px;
@@ -38,12 +43,10 @@
 .archives li
   font-family: fantasy;
   border-bottom: 1px dashed #ccc;
-  padding: 29px 0 7px 42px;
-  color: white;
+  padding: 25px 0 17px 19px
 
 li.year
   border-bottom: none;
-  color: white;
   font-size: 20px;
   padding: 42px 0 0;
 
