@@ -15,8 +15,11 @@
 html, body
   background: color-body-background
   font: font-size font-sans
+  word-break: break-word
   color: #fff
   margin: 0
+  a
+    color: #fff
 
 .home #mainContent
   position: absolute
@@ -29,6 +32,8 @@ html, body
     display: none
   .others #mainContent
     padding: 100px 30px 0
+  .copyright
+    font-size: 14px;
 
 @media mwp-tablet
   .home #mainContent
@@ -39,3 +44,10 @@ html, body
   .home #mainContent
     height: whole-sidebar-height
     padding: 0 0 0 360px
+
+.copyright
+  text-align: center;
+  width: 100%;
+  font-family: serif;
+  margin: 20px auto
+  font-weight: bolder
