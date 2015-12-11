@@ -32,8 +32,6 @@ select#lang-select
     top: 168px
 
 @media mwp-tablet
-  #lang-select-label>*
-    vertical-align: middle
   .bread-crumb:before
     width: table-article-space
     left: 200px
@@ -43,6 +41,20 @@ select#lang-select
     right: table-article-space
     top: 54px
     font-size: 22px
+
+
+@media mwp-pc
+  #lang-select-label>*
+    vertical-align: middle
+  .bread-crumb:before
+    width: pc-article-space
+    left: 360px
+    top: 68px
+  div#lang-select-wrap
+    position: absolute
+    right: pc-article-space
+    top: 54px
+    font-size: 16px
 
 .bread-crumb
   color: color-main-theme-color
