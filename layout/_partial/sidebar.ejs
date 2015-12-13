@@ -1,6 +1,6 @@
 <div class="sidebar">
     <span class="icon-menu"></span>
-    <img class="master-portrait" src="/css/images/master_portrait.jpg">
+    <img class="master-portrait" src="<%- theme.sourceRoot %>/css/images/master_portrait.jpg">
 
     <p class="master-name"></p>
 
@@ -14,7 +14,7 @@
     <div class="guider">
         <% for (var i in theme.menu){ %>
         <a class="main-nav-link"
-           href="<%- theme.sourceRoot %> <%- url_for(theme.menu[i]) %>"><span><%= __('menu.' + i.toLowerCase()) %></span></a>
+           href="<%- theme.sourceRoot %><%- url_for(theme.menu[i]) %>"><span><%= __('menu.' + i.toLowerCase()) %></span></a>
         <% } %>
     </div>
 
