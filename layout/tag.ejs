@@ -1,4 +1,4 @@
-<%- partial('_partial/header',{breadCrumb: [{name: 'tags', path: '/tags'},{title: page.tag, path:  url_for(page.path)}]}) %>
+<%- partial('_partial/header',{breadCrumb: [{name: 'tags', path: theme.sourceRoot+'/tags'},{title: page.tag, path:  url_for(page.path)}]}) %>
 <%- partial('_partial/nav-bar') %>
 <div class="blog-index-container">
     <% page.posts.each(function(post) { %>

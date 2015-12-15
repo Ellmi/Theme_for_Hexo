@@ -38,9 +38,9 @@
     }
     if(refer.match(comeFromTag)){
         var matches=refer.match(comeFromTag);
-        breadCrumb+='--><a href="/tags"><%=__("bread-crumb.tags")%></a>/<a href="'+refer+'">'+matches[1]+'</a>'
+        breadCrumb+='--><a href="<%= theme.sourceRoot%>/tags"><%=__("bread-crumb.tags")%></a>/<a href="'+refer+'">'+matches[1]+'</a>'
     }
-    breadCrumb+='--><a href="<%= theme.sourceRoot%><%- url_for(page.path) %>"><%= page.title%></a>';
+    breadCrumb+='--><a href="<%- url_for(page.path) %>"><%= page.title%></a>';
     $('.bread-crumb').html(breadCrumb);
 </script>
 <% } %>
