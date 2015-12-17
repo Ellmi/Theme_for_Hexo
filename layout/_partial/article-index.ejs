@@ -1,6 +1,8 @@
 <div class="article-index-wrapper">
     <header class="article-header">
-        <%- partial('post/title') %>
+        <h1>
+        <a href="<%- url_for(post.path) %>" class="article-title"><%= post.title %> ››</a>
+        </h1>
     </header>
     <div class="article-meta">
         <%- partial('post/date') %>
