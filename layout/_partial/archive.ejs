@@ -1,6 +1,6 @@
 <div class="archives">
     <% var year %>
-    <% site.posts.each(function(post) { %>
+    <% site.posts.sort('date', -1).each(function(post) { %>
         <% post.year = date(post.date, 'YYYY')%>
         <% if( post.year !== year){ %>
             <% year = post.year; %>
