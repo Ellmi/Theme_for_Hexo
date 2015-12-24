@@ -2,7 +2,7 @@
 <body>
 <%
 var pageType;
-if (is_home()) {
+if (page.type === "home") {
     pageType = "home";
 } else {
     pageType = "others";

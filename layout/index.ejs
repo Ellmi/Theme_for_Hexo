@@ -1,17 +1,8 @@
-<div class="homepage">
-    <div class="home-title">
-        <h1>2015</h1>
-
-        <div>
-            <span><%= __('homepage.fir') %></span>
-            <span class="black"><%= __('homepage.sec') %></span>
-        </div>
-        <br>
-
-        <div>
-            <span><%= __('homepage.thi') %></span>
-            <span class="black"><%= __('homepage.fou') %></span>
-            <span><%= __('homepage.fiv') %></span>
-        </div>
-    </div>
+<%- partial('_partial/header',{breadCrumb: []}) %>
+<%- partial('_partial/nav-bar') %>
+<div class="blog-index-container">
+    <% site.posts.sort('date', -1).each(function(post) { %>
+    <%- partial('_partial/article-index', {post: post}) %>
+    <% }) %>
 </div>
+<%- partial('_partial/copyright') %>

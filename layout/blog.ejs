@@ -1,8 +1,0 @@
-<%- partial('_partial/header',{breadCrumb: []}) %>
-<%- partial('_partial/nav-bar') %>
-<div class="blog-index-container">
-    <% site.posts.sort('date', -1).each(function(post) { %>
-    <%- partial('_partial/article-index', {post: post}) %>
-    <% }) %>
-</div>
-<%- partial('_partial/copyright') %>
