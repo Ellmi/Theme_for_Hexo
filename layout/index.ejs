@@ -1,8 +1,16 @@
 <%- partial('_partial/header',{breadCrumb: []}) %>
 <%- partial('_partial/nav-bar') %>
 <div class="blog-index-container">
-    <% site.posts.sort('date', -1).each(function(post) { %>
+    <% page.posts.sort('date', -1).each(function(post) { %>
     <%- partial('_partial/article-index', {post: post}) %>
     <% }) %>
 </div>
+<% if (page.total > 1){ %>
+<nav id="page-nav">
+    <%- paginator({
+        prev_text: '&laquo;',
+        next_text: '&raquo;'
+    }) %>
+</nav>
+<% } %>
 <%- partial('_partial/copyright') %>
