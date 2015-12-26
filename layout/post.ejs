@@ -1,4 +1,9 @@
-<%- partial('_partial/header',{breadCrumb: [{title: page.title,path:  url_for(page.path)}]}) %>
+<div class="header">
+    <%- partial('_partial/bread-crumb',{breadCrumb: [{title: page.title,path:  url_for(page.path)}]}) %>
+    <% if( page.showLanguage!==false) { %>
+    <%- partial('_partial/language') %>
+    <% } %>
+</div>
 <%- partial('_partial/nav-bar') %>
 <div class="blogContents">
     <%- partial('_partial/article', {post: page, blog: false}) %>
