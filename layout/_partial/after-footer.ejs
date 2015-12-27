@@ -27,7 +27,7 @@
 <% } %>
 <% if(is_post()){ %>
 <script>
-    var breadCrumb='<a href=<%= theme.sourceRoot%>><%=__("bread-crumb.blogs")%></a>',
+    var breadCrumb='<a href="<%= theme.sourceRoot%>/"><%=__("bread-crumb.blogs")%></a>',
     refer=decodeURIComponent(document.referrer),
     comeFromArchives=/^.*archives\/(index.html)?$/,
     comeFromTag=/^.*tags\/(.*?)\/(index.html)?$/;
