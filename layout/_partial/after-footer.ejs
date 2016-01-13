@@ -22,6 +22,7 @@
 <% } %>
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/jquery.js"></script>
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/morphext.min.js"></script>
+<script type="text/javascript" src="<%- theme.sourceRoot %>/js/clouds.js"></script>
 <% if(theme.internationalization){ %>
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/lang_select.js"></script>
 <% } %>
@@ -72,3 +73,19 @@
     });
 </script>
 <% } %>
+<script>
+    $(document).ready(function () {
+        $("#far-clouds").clouds({
+            fps: 30,
+            speed: 0.3,
+            dir: "left"
+        });
+
+        $("#near-clouds").clouds({
+            fps: 30,
+            speed: 1,
+            dir: "left"
+        });
+    });
+
+</script>
