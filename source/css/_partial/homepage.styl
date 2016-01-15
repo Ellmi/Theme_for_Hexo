@@ -6,20 +6,6 @@
   font-family: cursive
   box-shadow: 0 0 50px #eee inset
 
-.homepage:after
-  content: ''
-  background: url("images/background.jpeg") repeat
-  background-size: 100%,100%
-  z-index: -2
-  position: absolute
-  display: block
-  top: 0
-  right: 0
-  bottom: 0
-  -webkit-animation:section1 45s linear infinite
-  animation:section1 45s linear infinite
-  -moz-animation:section1 45s linear infinite
-
 @media mwp-tablet
   .homepage:after
     left: 200px
@@ -27,44 +13,6 @@
 @media mwp-pc
   .homepage:after
     left: 360px
-
-@-webkit-keyframes section1
-  0%{background-position :0 1000px}
-  100%  {background-position :1000px 0}
-
-@keyframes section1
-  0%{background-position :0 1000px}
-  100%  {background-position :1000px 0}
-
-.home-title h1
-  margin: 0
-  padding: 62px 0 42px 119px
-  font-size: 5rem
-  font-weight: normal
-  color: #bbcdc5
-
-.home-title h1:hover
-  font-weight: bolder
-
-.home-title span
-  color: #e4c6d0
-  padding: 3px
-  font-size: 3.2rem
-  transition: all 0.5s ease
-  border-bottom: 2px dashed
-  display: inline-block
-
-.home-title span:hover
-  transform: rotate(720deg)
-  -webkit-transform: rotate(720deg)
-  -ms-transform: rotate(720deg)
-  -moz-transform: rotate(720deg)
-
-.home-title span.black
-  color: #f5deb3
-
-.home-title div
-  text-align: center
 
 @media mwp-tablet
   .others #content
@@ -74,3 +22,8 @@
   .home-title h1
     padding: 116px 0 42px 100px
     font-size: 4rem
+
+section.main {
+  position: relative;
+  top: -150px;
+}
