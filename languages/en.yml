@@ -26,3 +26,7 @@ bread-crumb:
   archives: archieve
   categories: categories
   tags: tags
+
+homepage:
+  first: Runing
+  second: forward
