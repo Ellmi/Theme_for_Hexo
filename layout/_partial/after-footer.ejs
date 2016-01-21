@@ -93,6 +93,11 @@
 <script type="text/javascript" src="/js/jquery.lettering.js"></script>
 <script>
     $(document).ready(function() {
-        $(".cs-text").lettering('words').children('span').lettering()
+        $(".cs-text").lettering('words').children('span').lettering();
+        var options = {
+            animateThreshold: 100,
+            scrollPollInterval: 20
+        };
+        $('.aniview').AniView(options);
     });
 </script>
