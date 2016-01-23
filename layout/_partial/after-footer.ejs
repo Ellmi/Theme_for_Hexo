@@ -22,10 +22,9 @@
 <% } %>
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/jquery.js"></script>
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/morphext.min.js"></script>
-<script type="text/javascript" src="<%- theme.sourceRoot %>/js/clouds.js"></script>
+<script type="text/javascript" src="<%- theme.sourceRoot %>/js/jquery.aniview.js"></script>
 <% if(theme.internationalization){ %>
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/lang_select.js"></script>
-<script type="text/javascript" src="<%- theme.sourceRoot %>/js/jquery.aniview.js"></script>
 <% } %>
 <% if(is_post()){ %>
 <script>
@@ -75,25 +74,7 @@
 </script>
 <% } %>
 <script>
-    $(document).ready(function () {
-        $("#far-clouds").clouds({
-            fps: 30,
-            speed: 0.3,
-            dir: "left"
-        });
-
-        $("#near-clouds").clouds({
-            fps: 30,
-            speed: 1,
-            dir: "left"
-        });
-    });
-
-</script>
-<script type="text/javascript" src="/js/jquery.lettering.js"></script>
-<script>
     $(document).ready(function() {
-        $(".cs-text").lettering('words').children('span').lettering();
         var options = {
             animateThreshold: 50,
             scrollPollInterval: 0
