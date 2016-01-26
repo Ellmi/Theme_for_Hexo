@@ -1,12 +1,13 @@
-<%%>
 <div class="guider">
-
-    <a class="main-nav-link" href="/home"><span class="aniview" av-animation="slideInLeft">首页</span></a>
-
-    <a class="main-nav-link" href="/"><span class="aniview" av-animation="slideInRight">博客</span></a>
-
-    <a class="main-nav-link" href="/communication"><span class="aniview" av-animation="slideInLeft">交流</span></a>
-
-    <a class="main-nav-link" href="/about_me"><span class="aniview" av-animation="slideInRight">关于我</span></a>
-
+    <% var j = 0,animation; %>
+    <% for (var i in theme.menu){
+        animation = "slideInLeft";
+        if (j % 2 !== 0) {
+            animation = "slideInRight";
+        }
+        j++;
+    %>
+    <a class="main-nav-link"
+       href="<%- theme.sourceRoot %><%- url_for(theme.menu[i]) %>"><span class="aniview" av-animation="<%= animation%>"><%= __('menu.' + i.toLowerCase()) %></span></a>
+    <% } %>
 </div>
