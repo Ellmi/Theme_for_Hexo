@@ -21,12 +21,28 @@
 
 .white-year,
 .ink-year
-  font-size: 4rem;
-  position: fixed;
-  top: 38%;
+  font-size: 4rem
+  position: fixed
+  top: 38%
 .white-year
   color: #f5f5f5
-  right: 50%;
-  z-index: 1;
+  right: 50%
+  z-index: 2
 .ink-year
   color: #50616d
+
+@media mwp-pc
+  .year-background
+    position: fixed
+    top: 38%
+    height: 80px
+    width: 90px
+  .right-year
+    background: #f5f5f5
+    border-radius: 0 50% 50% 0
+    z-index: -1
+  .left-year
+    background: #50616d
+    right: 50%
+    z-index: 1
+    border-radius: 50% 0 0 50%
