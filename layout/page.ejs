@@ -1,7 +1,9 @@
 <% if(page.type === "home"){ %>
 <%- partial('home') %>
-<% } else if(page.type === "tags"){  %>
+<% } else if(page.type === "tags"){ %>
 <%- partial('_partial/tags') %>
+<% } else if(page.type === "communication"){ %>
+<%- partial('communication') %>
 <% } else { %>
 <%- partial('_partial/developing') %>
 <% } %>
