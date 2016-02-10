@@ -71,10 +71,15 @@
     $(".icon-menu").click(function(){
         $(".guider").toggleClass("guiderToShow");
     });
-    $(".cb-bar > span").click(function(){
+    $("#email .cb-bar > span").click(function(){
         $(this).toggleClass("closedarrow");
         $(this).toggleClass("openedarrow");
-        $(".cb-content").toggleClass("content-hided");
+        $("#email .cb-content").toggleClass("content-hided");
+    });
+    $("#more-info .cb-bar > span").click(function(){
+        $(this).toggleClass("closedarrow");
+        $(this).toggleClass("openedarrow");
+        $("#more-info .cb-content").toggleClass("content-hided");
     })
 </script>
 <% } %>
