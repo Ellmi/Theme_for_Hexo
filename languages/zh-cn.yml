@@ -26,3 +26,9 @@ bread-crumb:
   archives: 归档
   categories: 分类
   tags: 标签
+
+cb-email:
+  title: 发送邮件
+
+cb-info:
+  title: 更多信息

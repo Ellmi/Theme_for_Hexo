@@ -26,3 +26,9 @@ bread-crumb:
   archives: archieve
   categories: categories
   tags: tags
+
+cb-email:
+  title: Send me an email
+
+cb-info:
+  title: More Infomation
