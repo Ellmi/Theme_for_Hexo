@@ -29,6 +29,12 @@ bread-crumb:
 
 cb-email:
   title: 发送邮件
+  name: 名字
+  email: 邮箱
+  message: 内容
+  send: 发送
 
 cb-info:
   title: 更多信息
+  weibo: 微博
+  toutiao: 极客头条

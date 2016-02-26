@@ -29,6 +29,12 @@ bread-crumb:
 
 cb-email:
   title: Send me an email
+  name: Name
+  email: Email
+  message: Message
+  send: Send
 
 cb-info:
   title: More Infomation
+  weibo: Weibo.com
+  toutiao: Toutiao.com
