@@ -23,6 +23,7 @@
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/jquery.js"></script>
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/morphext.min.js"></script>
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/jquery.aniview.js"></script>
+<script type="text/javascript" src="<%- theme.sourceRoot %>/js/unslider.js"></script>
 <% if(theme.internationalization){ %>
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/lang_select.js"></script>
 <% } %>
@@ -90,5 +91,6 @@
             scrollPollInterval: 0
         };
         $('.aniview').AniView(options);
+        $('.default-slider').unslider();
     });
 </script>
