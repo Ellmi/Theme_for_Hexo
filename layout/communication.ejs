@@ -1,9 +1,17 @@
 <div class="header">
     <%- partial('_partial/language') %>
 </div>
-<div id="email">
+<div id="social" class="aniview" av-animation="pulse">
+    <div class="cb-bar"><span class="cb-title"><%= __('cb-info.title') %></span><span class="arrow to-close-arrow"></span></div>
+    <div class="cb-content">
+        <span><%= __('cb-info.weibo') %>:<a rel="nofollow" href="http://weibo.com/u/5611147429" target="_blank">@Yanmin-x</a></span>
+        <span><%= __('cb-info.toutiao') %>:<a rel="nofollow" href="http://toutiao.io/u/181364" target="_blank">@Yanmin-x</a></span>
+        <span>Github:<a rel="nofollow" href="http://github.com/ellmi" target="_blank">@Yanmin-x</a></span>
+    </div>
+</div>
+<div id="email" class="aniview" av-animation="pulse">
     <div class="cb-bar"><span class="cb-title"><%= __('cb-email.title') %></span><span class="arrow to-close-arrow"></span></div>
-    <div class="cb-content aniview" av-animation="flip">
+    <div class="cb-content">
     <input name="realname" placeholder="<%= __('cb-email.name') %>"/>
     <input name="email" placeholder="<%= __('cb-email.email') %>"/>
     <textarea cols="40" rows="10" name="Message" placeholder="<%= __('cb-email.message') %>"></textarea>
@@ -11,11 +19,4 @@
     <input type="submit" value="<%= __('cb-email.send') %>"/>
     </div>
 </div>
-<div id="more-info">
-    <div class="cb-bar"><span class="cb-title"><%= __('cb-info.title') %></span><span class="arrow to-close-arrow"></span></div>
-    <div class="cb-content aniview" av-animation="flip">
-        <span><%= __('cb-info.weibo') %>:<a rel="nofollow" href="http://weibo.com/u/5611147429" target="_blank">@Yanmin-x</a></span>
-        <span><%= __('cb-info.toutiao') %>:<a rel="nofollow" href="http://toutiao.io/u/181364" target="_blank">@Yanmin-x</a></span>
-        <span>Github:<a rel="nofollow" href="http://github.com/ellmi" target="_blank">@Yanmin-x</a></span>
-    </div>
-</div>
+<%- partial('_partial/copyright') %>
