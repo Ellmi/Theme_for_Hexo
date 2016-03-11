@@ -43,20 +43,20 @@ cb-info:
 friends-remark:
   title: Friends Remark
   sen:
-    tag1: '#男朋友'
-    remark: 我家宝贝，独立的个性中充满依赖，严肃的神情中泛着古怪，官腔中夹杂着柔弱浪漫……矛盾已然是她的代名词
+    tag1: '#boy friend'
+    remark: My lovely girl, full of dependency behind an independent personality, weird looking sometimes show on her serious face,and the offcial mixed with the romantic...... contradiction is already synonymous with her!
   dian:
-    tag1: '#死党'
-    tag2: '#单身'
-    remark: 坚强、好强起来，敬你是条汉子，无所畏惧！温柔、善良起来，敬你是软妹子，楚楚可人！喜欢猫咪,是一个有弹性且既有爱又有趣之人。
+    tag1: '#friend'
+    tag2: '#single'
+    remark: I know nothing can stop you cause you're strong and courageous! I know all lifes will kiss you cause you're gentle and kind-hearted! Anyway, is a funny girl love cat and the colorful life!
   li:
-    tag1: '#好友'
-    tag2: '#大学舍友'
-    remark: 男友力爆表,挽着你逛街很happy,就像挽着自己的男朋友.是个独立的让人心疼,好强的让人心疼的女生,我好想你哦
+    tag1: '#friend'
+    tag2: '#college roomate'
+    remark: It's so happy to go shopping with you and holding your hand is like holding a boyfriend.Independent and competitive girl I miss you so much!
   lina:
-    tag1: '#好友'
-    tag2: '#同事'
-    remark: 在阳光下会打喷嚏的女孩儿，只要她想就可以抓住所有人的眼光，敢爱敢恨，直来直往，当然啦，没事儿也丢丢东西，总之,为了1200w努力吧！
+    tag1: '#friend'
+    tag2: '#colleague'
+    remark: A girl going to sneeze when see the sun.And looks like always can catch everone's eye if she want.Dare to love and hate.Also always lost some things like keys.Fighting, for the 1200w!
 
 simple-resume:
   title: Simple Resume
