@@ -7,6 +7,9 @@
         <span><%= __('cb-info.weibo') %>:<a rel="nofollow" href="http://weibo.com/u/5611147429" target="_blank">@Yanmin-x</a></span>
         <span><%= __('cb-info.toutiao') %>:<a rel="nofollow" href="http://toutiao.io/u/181364" target="_blank">@Yanmin-x</a></span>
         <span>Github:<a rel="nofollow" href="http://github.com/ellmi" target="_blank">@Yanmin-x</a></span>
+        <% if (theme.rss){ %>
+        <span>Feed:<a rel="nofollow" href="<%- theme.rss %>" title="RSS Feed">Rss</a></span>
+        <% } %>
     </div>
 </div>
 <div id="email" class="aniview" av-animation="pulse">

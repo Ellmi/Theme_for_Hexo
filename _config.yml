@@ -4,6 +4,7 @@ menu:
   Blog: /
   Communication: /communication
   About_me: /about_me
+rss: /atom.xml
 
 # Miscellaneous
 google_analytics: true
