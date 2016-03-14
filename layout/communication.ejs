@@ -1,4 +1,4 @@
-<%- partial('_partial/header',{breadCrumb: []}) %>
+<%- partial('_partial/header',{breadCrumb: [{name: 'communication', path:  url_for(page.path)}]}) %>
 <div id="social" class="aniview" av-animation="pulse">
     <div class="cb-bar"><span class="cb-title"><%= __('cb-info.title') %></span><span class="arrow to-close-arrow"></span></div>
     <div class="cb-content">

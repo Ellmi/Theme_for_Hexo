@@ -23,9 +23,12 @@ nav:
 
 bread-crumb:
   blogs: 博客
+  backToBlogs: 返回博客
   archives: 归档
   categories: 分类
   tags: 标签
+  communication: 交流
+  about_me: 关于我
 
 cb-email:
   title: 发送邮件

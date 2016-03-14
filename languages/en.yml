@@ -23,9 +23,12 @@ nav:
 
 bread-crumb:
   blogs: Blogs
+  backToBlogs: Back to Blogs
   archives: archieve
   categories: categories
   tags: tags
+  communication: Communication
+  about_me: About me
 
 cb-email:
   title: Send me an email
