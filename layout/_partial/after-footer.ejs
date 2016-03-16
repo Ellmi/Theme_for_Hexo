@@ -27,6 +27,9 @@
 <% if(theme.internationalization){ %>
 <script type="text/javascript" src="<%- theme.sourceRoot %>/js/lang_select.js"></script>
 <% } %>
+<% if(page.type==="communication"){ %>
+<script type="text/javascript" src="<%- theme.sourceRoot %>/js/send_mail.js"></script>
+<% } %>
 <% if(is_post()){ %>
 <script>
     var breadCrumb='<a href="<%= theme.sourceRoot%>/"><%=__("bread-crumb.blogs")%></a>',
@@ -91,18 +94,6 @@
             scrollPollInterval: 0
         };
         $('.aniview').AniView(options);
-        $('.default-slider').unslider({ autoplay: true, delay: 10000, arrows: false, nav: false });
+        $('.default-slider').unslider({ autoplay: true, delay: 6000, arrows: false, nav: false });
     });
-</script>
-<script>
-    function sendEmail() {
-        var name= $("#email [name=realname]").val();
-        var address=$("#email [name=email]").val();
-        var message=$("#email [name=message]").val();
-        emailjs.send("gmail", "mail",{from_name: name, from_address: address, body: message}).then(function (response) {
-            console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-        }, function (err) {
-            console.log("FAILED. error=", err);
-        });
-    }
 </script>
