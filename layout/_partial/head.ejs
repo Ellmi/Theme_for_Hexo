@@ -55,4 +55,10 @@
     <link rel="canonical" href="<%= url %>">
     <%- css('css/style') %>
     <%- partial('_partial/google-analytics') %>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_Km14fMJa8RZ49ZLlRN1GF");
+        })();
+    </script>
 </head>

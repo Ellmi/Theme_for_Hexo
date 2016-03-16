@@ -15,9 +15,9 @@
     <div class="cb-content">
     <input name="realname" placeholder="<%= __('cb-email.name') %>"/>
     <input name="email" placeholder="<%= __('cb-email.email') %>"/>
-    <textarea cols="40" rows="10" name="Message" placeholder="<%= __('cb-email.message') %>"></textarea>
+    <textarea cols="40" rows="10" name="message" placeholder="<%= __('cb-email.message') %>"></textarea>
     <br/>
-    <input type="submit" value="<%= __('cb-email.send') %>"/>
+    <input type="button" value="<%= __('cb-email.send') %>" onclick="sendEmail()"/>
     </div>
 </div>
 <%- partial('_partial/copyright') %>
