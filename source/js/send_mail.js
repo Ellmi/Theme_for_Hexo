@@ -1,5 +1,6 @@
 function sendEmail() {
     $('#email [type=button]').attr('disabled','disabled');
+    $('#email [type=button]').css("background","#ccc");
     var name = $("#email [name=realname]").val();
     var address = $("#email [name=email]").val();
     var message = $("#email [name=message]").val();
@@ -19,6 +20,7 @@ function sendEmail() {
     } else {
         showErrorMessage();
     }
+    $('#email [type=button]').css("background","#e4c6d0");
 }
 function checkInfoValid() {
     var isValid = true;
