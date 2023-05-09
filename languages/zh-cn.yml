@@ -5,8 +5,8 @@ menu:
   about_me: 关于我
 hi:
   hi: 嗨
-  introduction: 大家好, 我是Yanmin, 一个软件开发姑娘. 我在想
-  thinking: 做什么工作呢并不重要;重要的是, 想给世界带去作品;它有力量且给人们以勇气;并且, 相信最终会找到;愿和我一起完成此事的伙伴们.
+  introduction: 大家好, 我是Yanmin, 一个软件开发姑娘. 我想要
+  thinking: 勇敢;富有;珍惜;享受生命.
 
 language: 简体中文
 
@@ -51,10 +51,6 @@ friends-remark:
     tag1: '#死党'
     tag2: '#单身'
     remark: 坚强、好强起来，敬你是条汉子，无所畏惧！温柔、善良起来，敬你是软妹子，楚楚可人！喜欢猫咪,是一个有弹性且既有爱又有趣之人。
-  li:
-    tag1: '#好友'
-    tag2: '#大学舍友'
-    remark: 男友力爆表,挽着你逛街很happy,就像挽着自己的男朋友.是个独立的让人心疼,好强的让人心疼的女生,我好想你哦
   lina:
     tag1: '#好友'
     tag2: '#同事'
@@ -66,6 +62,5 @@ simple-resume:
   sec: 数十载 被散养+别人家的好孩子
   thi: 武汉理工大学2014届本科软件工程
   for: 2014年夏,入职Thoughtworks
-  fif: 2015年春,印度参加TWU(Thoughtworks university)
   six: 2015年冬,个人博客网站开放
   sev: 在路上......

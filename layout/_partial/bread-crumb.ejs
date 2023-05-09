@@ -1,11 +1,11 @@
 <div class="bread-crumb">
     <% if(page.type === "communication" || page.type === "about_me"){ %>
-    <a href="<%- theme.sourceRoot %>/"><%= __('bread-crumb.backToBlogs') %></a>
+    <a href="<% if(page.lang=== "en") { %>/en<% } %>/"><%= __('bread-crumb.backToBlogs') %></a>
     <% breadCrumb.forEach(function(node){ %>
      | <a href="<%- node.path %>"><%= node.name ? __('bread-crumb.' + node.name) : node.title %></a>
     <% }) %>
     <% }else{ %>
-    <a href="<%- theme.sourceRoot %>/"><%= __('bread-crumb.blogs') %></a>
+    <a href="<% if(page.lang=== "en") { %>/en<% } %>/"><%= __('bread-crumb.blogs') %></a>
     <% breadCrumb.forEach(function(node){ %>
     --><a href="<%- node.path %>"><%= node.name ? __('bread-crumb.' + node.name) : node.title %></a>
     <% }) %>

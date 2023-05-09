@@ -5,7 +5,7 @@
     <p class="master-name"></p>
 
     <p class="hi">
-        <span class="dropcap"><%= __('hi.hi') %></span>
+        <span class="dropcap"><%= _p('hi.hi') %></span>
         <span class="detail"><%= __('hi.introduction') %></span>
         <span class="icon-play3"></span>
         <span class="occupation morphext"><%= __('hi.thinking') %></span>
@@ -14,12 +14,12 @@
     <div class="guider">
         <% for (var i in theme.menu){ %>
         <a class="main-nav-link"
-           href="<%- theme.sourceRoot %><%- url_for(theme.menu[i]) %>"><span><%= __('menu.' + i.toLowerCase()) %></span></a>
+           href="<% if(page.lang=== "en") { %>/en<% } %><%- url_for(theme.menu[i]) %>"><span><%= __('menu.' + i.toLowerCase()) %></span></a>
         <% } %>
     </div>
 
     <div class="link">
         <a href="https://github.com/ellmi" class="icon-link">github.com/ellmi</a>
-        <a href="http://www.yanminx.com" class="icon-link">www.yanminx.com</a>
+        <a href="http://www.yanmin-x.com" class="icon-link">www.yanmin-x.com</a>
     </div>
 </div>

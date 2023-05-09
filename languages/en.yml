@@ -6,8 +6,8 @@ menu:
 
 hi:
   hi: Hi
-  introduction: everyone, this is Yanmin, a dev come from China. I'm thinking
-  thinking: What I'm doing now is not that important;The point is I wanna give this world something;which is powerful,make people full of courage;And, I will find the guys who want to do these things with me.
+  introduction: everyone, this is Yanmin, a dev come from China. I'd like to
+  thinking: be brave;be rich;value the time;enjoy life.
 
 language: English
 
@@ -44,7 +44,7 @@ cb-info:
 
 
 friends-remark:
-  title: Friends Remark
+  title: Friend Comments
   sen:
     tag1: '#boy friend'
     remark: My lovely girl, full of dependency behind an independent personality, weird look sometimes show on her serious face,and the offcial girl mixed with the romantic...... contradiction is already synonymous with her!
@@ -52,10 +52,6 @@ friends-remark:
     tag1: '#friend'
     tag2: '#single'
     remark: I know nothing can stop you cause you're strong and courageous! I know all lifes will kiss you cause you're gentle and kind-hearted! Anyway, is a funny girl love cat and the colorful life!
-  li:
-    tag1: '#friend'
-    tag2: '#college roomate'
-    remark: It's so happy to go shopping with you and holding your hand likes holding a boyfriend.Independent and competitive girl I miss you so much!
   lina:
     tag1: '#friend'
     tag2: '#colleague'
@@ -67,6 +63,7 @@ simple-resume:
   sec: grown up as a good child with less control from parents more ten years
   thi: 2014's graduate of Wuhan university of technology
   for: 2014 summer,became a Thoughtworker
-  fif: 2015 spring,joined TWU(Thoughtworks university) in India
   six: 2015 winter,private blog website opened
   sev: on the way......
+
+prefix: "/en"

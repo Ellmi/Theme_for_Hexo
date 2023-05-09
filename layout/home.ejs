@@ -1,6 +1,6 @@
 <div class="year-part">
     <span class="white-year">20</span>
-    <span class="ink-year">16</span>
+    <span class="ink-year">23</span>
     <span class="left-year year-background aniview" av-animation="rotateInUpLeft"></span>
     <span class="right-year year-background aniview" av-animation="rotateInUpRight"></span>
 </div>
@@ -14,6 +14,6 @@
         j++;
     %>
     <a class="main-nav-link"
-       href="<%- theme.sourceRoot %><%- url_for(theme.menu[i]) %>"><span class="aniview" av-animation="<%= animation%>"><%= __('menu.' + i.toLowerCase()) %></span></a>
+       href="<% if(page.lang=== "en") { %>/en<% } %><%- url_for(theme.menu[i]) %>"><span class="aniview" av-animation="<%= animation%>"><%= __('menu.' + i.toLowerCase()) %></span></a>
     <% } %>
 </div>

@@ -1,15 +1,15 @@
 <nav id="type-nav">
-    <a href="<%- theme.sourceRoot%>/archives">
+    <a href="<% if(page.lang=== "en") { %>/en<% } %>/archives">
         <li class="left">
             <%= __('nav.archives')%>
         </li>
     </a>
-    <a href="<%- theme.sourceRoot%>/tags">
+    <a href="<% if(page.lang=== "en") { %>/en<% } %>/tags">
         <li>
             <%= __('nav.tags')%>
         </li>
     </a>
-    <a href="<%- theme.sourceRoot%>/">
+    <a href="<% if(page.lang=== "en") { %>/en<% } %>/">
         <li class="right">
             <%= __('nav.categories')%>
         </li>

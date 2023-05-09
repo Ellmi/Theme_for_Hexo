@@ -32,7 +32,7 @@
 <% } %>
 <% if(is_post()){ %>
 <script>
-    var breadCrumb='<a href="<%= theme.sourceRoot%>/"><%=__("bread-crumb.blogs")%></a>',
+    var breadCrumb='<a href="<% if(page.lang=== "en") { %>/en<% } %>/"><%=__("bread-crumb.blogs")%></a>',
     refer=decodeURIComponent(document.referrer),
     comeFromArchives=/^.*archives\/(index.html)?$/,
     comeFromTag=/^.*tags\/(.*?)\/(index.html)?$/;
@@ -42,7 +42,7 @@
     }
     if(refer.match(comeFromTag)){
         var matches=refer.match(comeFromTag);
-        breadCrumb+='--><a href="<%= theme.sourceRoot%>/tags"><%=__("bread-crumb.tags")%></a>/<a href="'+refer+'">'+matches[1]+'</a>'
+        breadCrumb+='--><a href="<% if(page.lang=== "en") { %>/en<% } %>/tags"><%=__("bread-crumb.tags")%></a>/<a href="'+refer+'">'+matches[1]+'</a>'
     }
     breadCrumb+='--><a href="<%- url_for(page.path) %>"><%= page.title%></a>';
     $('.bread-crumb').html(breadCrumb);

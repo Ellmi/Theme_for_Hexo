@@ -9,7 +9,7 @@ if (page.type === "home") {
 }
 %>
 <div id="PageContainer" class="<%= pageType%>">
-    <%- partial('_partial/sidebar', null, {cache: true}) %>
+    <%- partial('_partial/sidebar', null, {cache: false}) %>
     <div id="mainContent">
         <%- body %>
     </div>

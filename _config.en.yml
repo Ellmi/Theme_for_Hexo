@@ -1,9 +1,9 @@
 # Header
 menu:
-  Home: /home
-  Blog: /
-  Communication: /communication
-  About_me: /about_me
+  Home: /en/home
+  Blog: /en
+  Communication: /en/communication
+  About_me: /en/about_me
 rss: /atom.xml
 
 # Miscellaneous
@@ -11,4 +11,5 @@ google_analytics: true
 
 # internationalization
 internationalization: true
-language: zh-cn
+
+language: en
